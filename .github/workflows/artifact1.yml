@@ -11,9 +11,9 @@ env:
       runs-on: windows-latest
       steps:
        -name: check out the code
-        use: actions/checkout@v2
+        uses: actions/checkout@v2
        -name: Upload artifact
-        use: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v2
         with:
           name: ${{ env.ARTIFACT_NAME }}
           path: .
